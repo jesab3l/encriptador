@@ -1,4 +1,3 @@
-
 function txtEncriptar(){
     var inputVal = document.getElementById("msg-ingresado").value;
     var regex = /([^a-z\s\ñ\0-9\.,&])/g;
