@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/desktop.css" media="(min-width: 930px)"/>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="./encriptador.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="main-container">
+            <div class="img-logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <div class="encriptador-container">
+                <textarea class="msg-ingresado" id="msg-ingresado" placeholder="Ingrese el texto aqui"></textarea>
+                <p><span class="iconify" data-icon="bi:exclamation-circle-fill"></span> Solo letras minúsculas y sin acentos</p>
+                <div class="botton-container">
+                    <button class="main-button enc-button" type="button" onclick="txtEncriptar();">Encriptar</button>
+                    <button class="main-button desc-button" type="button" onclick="txtDesencrip();">Desencriptar</button>
+                </div>
+            </div>
+            
+        </section>
+        <section class="result-container">
+            <div class="display-message">
+                <div class="no-message" id="no-message">
+                    <div class="backgroundImg"></div>
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="message" id="message">
+                    <textarea class="msg-final" id="msg-final"></textarea>
+                    <button class="copy-button" type="button" id="copy-button" onclick="copyTxt()">Copiar</button>
+                </div>  
+            </div>
+        </section>
+    </main>
+</body>
+</html>

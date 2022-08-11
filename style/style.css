@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*Colores*/
+    --background: #E5E5E5;
+    --darkblue300: #0A3871;
+    --gray400: #495057; 
+    --gray500: #868E96;
+
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 15px;
+}
+
+.img-logo{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+
+.img-logo img{
+    padding: 15px 10px;
+}
+
+.encriptador-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    padding: 25px 10px;
+}
+
+.encriptador-container .msg-ingresado{
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+    color: var(--darkblue300);
+    border: none;
+    outline: none;
+    resize: none;
+    display: block;
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 300px;
+    font-size: 2.8rem;
+}
+
+.encriptador-container p{
+    color: var(--gray400);
+    font-size: 1.2rem;
+    min-width: 300px;
+    width: 100%;
+    max-width: 620px;
+    margin: auto;
+}
+
+.encriptador-container .iconify{
+    color: #67808E;
+    font-size: 1.5rem;
+}
+
+.encriptador-container .botton-container{
+    margin: 0 auto;
+}
+
+.botton-container .main-button{
+    width: 290px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 8px;
+    font-family: 'Inter', sans-serif;
+    cursor:pointer;
+}
+
+.botton-container .enc-button{
+    background-color: var(--darkblue300);
+    border: 2px solid var(--darkblue300);
+    color: white;
+}
+
+.botton-container .desc-button, .message .copy-button{
+    border: 1px solid var(--darkblue300);
+    color: var(--darkblue300);
+}
+
+.result-container{
+    width: 100%;
+    min-width: 320px;
+    padding: 10px;
+    justify-items: center; 
+    align-self: center;
+}
+
+.result-container .display-message{
+    background-color: white;
+    max-width: 620px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px gray;
+    margin: 0 auto;
+}
+
+.no-message, .message{
+    padding: 32px;
+}
+
+.no-message h1, .no-message p{
+    text-align: center;
+    text-shadow: 0px 3px 4px gray;
+}
+
+.no-message h1{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 28px;
+}
+.no-message p{
+    margin-top: 16px;
+    font-size: 1.6rem;
+}
+
+#message{
+    display: none;
+} 
+
+.message .msg-final{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    min-height: 250px;
+    line-height: 36px;
+    font-size: 2.4rem;
+    color: var(--gray400);
+}
+
+.message .copy-button{
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 15px;
+    height: 50px;
+    cursor:pointer;
+    width: 100%;
+    max-width: 290px;
+}
