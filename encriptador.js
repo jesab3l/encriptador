@@ -18,7 +18,8 @@ function txtEncriptar(){
 
 function txtDesencrip(){
     var inputVal = document.getElementById("msg-ingresado").value;
-    if(inputVal != '')
+    var regex = /([^a-z\s\ñ\0-9\.,&])/g;
+    if((regex.test(inputVal) == false) && (inputVal != ''))
     {
       let txtdes = inputVal
       .replaceAll(/enter/g, "e")
